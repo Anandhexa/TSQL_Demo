@@ -1,0 +1,36 @@
+{
+    "project_name": "Comprehensive Travel and Layover Management System 30_07_25_T1",
+    "organization": "Hexaware",
+    "project_description": "This project is a robust travel and layover management system designed to streamline the scheduling, tracking, and management of travel trips for airline crew members. It handles various functionalities, including validating trip details, managing layover records, and ensuring accurate synchronization of travel data across multiple airlines and stations. The system supports both local and GMT time management, incorporates logic for handling cancellations, revisions, and pending statuses, and ensures seamless integration with vendor systems. It also provides mechanisms for resolving mismatched records, automating updates, and creating new travel pairs when necessary. The solution is tailored to meet the dynamic needs of airline operations.",
+    "technology": "TSQL",
+    "line_of_business": "Airline Operations",
+    "sector": "Aviation",
+    "focus_area": "Crew Travel and Layover Management",
+    "actors":["Airlines", "Crew Members", "Vendors", "System Administrators"],
+    "functional_modules": [
+        {
+            "name": "Travel Trip Management",
+            "description": "Handles the creation, update, and cancellation of travel trips for crew members. Includes validation of trip dates and times and ensures no duplication in mock reference numbers."
+        },
+        {
+            "name": "Layover Management",
+            "description": "Manages layover records, including updates to flight information, hotel details, and time conversions (local vs. GMT). Ensures manual layover records are accurately processed."
+        },
+        {
+            "name": "Hotel Integration",
+            "description": "Integrates hotel information such as check-in/check-out times, van services, and room types for crew layovers. Includes handling alternate hotels."
+        },
+        {
+            "name": "City Pair Management",
+            "description": "Updates and validates city pair records for flights, ensuring proper handling of ground transportation and layover overlaps."
+        },
+        {
+            "name": "Queue Management",
+            "description": "Manages active and pending queues for trip records, ensuring proper notifications and updates to vendors."
+        },
+        {
+            "name": "Data Feed Processing",
+            "description": "Processes incoming data feeds for layover and travel trip updates, ensuring synchronization with external systems."
+        }
+    ]
+}
